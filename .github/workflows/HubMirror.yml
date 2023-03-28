@@ -1,0 +1,9 @@
+steps:
+- name: Mirror the Github organization repos to Gitee.
+  uses: knight000/trackerslist@master
+  with:
+    src: github/knight000
+    dst: gitee/kni_gitee
+    dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+    dst_token: ${{ secrets.GITEE_TOKEN }}
+    account_type: user
