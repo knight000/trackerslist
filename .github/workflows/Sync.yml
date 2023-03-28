@@ -8,7 +8,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: TG908/fork-sync@master
+      - uses: tgymnich/fork-sync@v1.8
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: ngosang # fork 的上游仓库 user
